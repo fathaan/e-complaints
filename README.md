@@ -1,68 +1,69 @@
-# CodeIgniter 4 Application Starter
+### **E-Complaints Politeknik Negeri Lampung**
 
-## What is CodeIgniter?
+**E-Complaints** adalah aplikasi web pengaduan resmi yang dirancang untuk memfasilitasi pelaporan kerusakan fasilitas kampus di Politeknik Negeri Lampung. Aplikasi ini memberikan kemudahan bagi seluruh civitas akademika untuk melaporkan masalah yang ditemukan, sehingga dapat ditangani dengan cepat dan efektif.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+### **Fitur Utama**
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+1. **Pelaporan Kerusakan**  
+   Pengguna dapat mengajukan pengaduan terkait fasilitas kampus yang rusak, seperti ruang kelas, laboratorium, taman, atau fasilitas lainnya.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+2. **Manajemen Laporan**  
+   Setiap laporan akan dikelola oleh admin untuk memastikan tindak lanjut dan penyelesaian masalah.
 
-## Installation & updates
+3. **Notifikasi Status Laporan**  
+   Pengguna dapat memantau status pengaduan, mulai dari diterima hingga diselesaikan.
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+4. **User-Friendly Interface**  
+   Antarmuka aplikasi dirancang agar mudah digunakan oleh semua kalangan.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+---
 
-## Setup
+### **Teknologi yang Digunakan**
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+Aplikasi ini dibangun menggunakan **CodeIgniter 4 (CI4)**, sebuah framework PHP yang ringan, cepat, fleksibel, dan aman. Pemilihan CI4 mendukung pengembangan yang efisien dan memungkinkan integrasi dengan teknologi terkini.
 
-## Important Change with index.php
+#### **Fitur Utama CodeIgniter 4 yang Dimanfaatkan:**
+- **Keamanan**: Melindungi aplikasi dari ancaman umum seperti SQL Injection dan XSS.
+- **Routing Fleksibel**: Mempermudah pengelolaan jalur akses di aplikasi.
+- **Model-View-Controller (MVC)**: Memisahkan logika aplikasi dari tampilan untuk pengelolaan kode yang lebih rapi.
+- **Ekstensi Modern**: Dukungan untuk PHP 8.1 atau lebih tinggi, dengan ekstensi seperti:
+  - `intl` untuk penanganan bahasa dan waktu lokal.
+  - `mbstring` untuk manipulasi string yang kompleks.
+  - `json` untuk penanganan data berbasis JSON.
+  - `mysqlnd` untuk interaksi dengan database MySQL.
+  - `libcurl` untuk pengelolaan HTTP melalui CURL.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+---
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+### **Setup dan Konfigurasi**
+1. **Instalasi Framework**  
+   Untuk instalasi, gunakan perintah berikut:  
+   ```bash
+   composer create-project codeigniter4/appstarter
+   ```
 
-**Please** read the user guide for a better explanation of how CI4 works!
+2. **Konfigurasi Environment**  
+   Salin file `env` ke `.env` dan sesuaikan dengan kebutuhan aplikasi, seperti:
+   - Base URL aplikasi.
+   - Konfigurasi database untuk menyimpan laporan pengaduan.
 
-## Repository Management
+3. **Pengaturan Server**  
+   Aplikasi ini mengikuti standar CI4, di mana file `index.php` ditempatkan di dalam folder *public* untuk keamanan. Pastikan server Anda mengarah ke folder *public*.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+---
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+### **Persyaratan Server**
+Untuk menjalankan aplikasi ini, pastikan server memenuhi spesifikasi berikut:
+- **PHP**: Versi 8.1 atau lebih tinggi.
+- **Ekstensi PHP**:
+  - `intl`
+  - `mbstring`
+  - `json` (aktif secara default)
+  - `mysqlnd`
+  - `libcurl`
 
-## Server Requirements
+---
 
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Aplikasi **E-Complaints Politeknik Negeri Lampung** adalah langkah nyata dalam mendukung terciptanya lingkungan kampus yang nyaman dan terawat. Dengan memanfaatkan teknologi modern, pengelolaan fasilitas menjadi lebih efektif dan transparan. Mari bersama menjaga dan meningkatkan kualitas kampus! 🚀
